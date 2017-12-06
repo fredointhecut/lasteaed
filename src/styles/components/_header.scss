@@ -26,13 +26,22 @@
 				margin-left: 15px;
 			}
 
-			&--fat {
-				font-weight: 700;
-				font-size: 24px;
-			}
-
 			&.-turnt {
 				transform: rotate(10deg);
+			}
+		}
+	}
+
+	&--compact {
+		padding: 10px;
+
+		.c-header__title {
+			margin-right: 15px;
+		}
+
+		.c-header__nav__link {
+			+ .c-header__nav__link {
+				margin-left: 7.5px;
 			}
 		}
 	}
