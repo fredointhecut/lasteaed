@@ -1,0 +1,15 @@
+{
+  "name": "lasteaed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fredointhecut/lasteaed.git",
+  "author": "fredo <fredi.vainumae1@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+  	"start": "node-sass src/styles/index.scss dist/main.css -w"
+  },
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

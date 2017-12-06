@@ -1,0 +1,25 @@
+@import 'components/_header';
+
+body {
+	background: #999;
+	font-family: Arial;
+}
+
+h1 {
+	color: #555;
+}
+
+h2 {
+	color: #f00;
+}
+
+p {
+	background:#656;
+	color: #fff;
+	padding: 15px;
+}
+
+.secondary {
+	background: none;
+	color: #777;
+}

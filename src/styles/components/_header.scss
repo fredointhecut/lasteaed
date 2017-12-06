@@ -1,0 +1,39 @@
+.c-header {
+	padding: 20px;
+	background-color: #00f;
+	display: flex;
+	align-items: center;
+
+	&__title {
+		color: #f00;
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+
+		&__link {
+			color: #0f0;
+			font-weight: 300;
+
+			&:hover {
+				color: #fff;
+			}
+
+			+ .c-header__nav__link {
+				margin-left: 15px;
+			}
+
+			&--fat {
+				font-weight: 700;
+				font-size: 24px;
+			}
+
+			&.-turnt {
+				transform: rotate(10deg);
+			}
+		}
+	}
+}
