@@ -1,6 +1,7 @@
+/* Top Nav */
 .top-nav {
 	width: 100%;
-	background: #3D3F40;
+	background: #696969;
 	padding: 0;
 	margin: 0;
 }
@@ -48,19 +49,22 @@
 	}
 }
 
+/* Top Bar */
 .top-bar {
 	color: black;
 	padding: 10px;
+	background: gray;
 
 	span{
-		color:lighten(red, 10%);
-		background: #purple;
+		color:lighten(green, 10%);
+		background: none;
 		padding: 5px 9px;
 		margin-right: 4px;
 	}
 
 	li{
 		text-transform: uppercase;
+		background: gray;
 	}
 
 	a{
@@ -73,21 +77,22 @@
 	}
 
 	a.current {
-		color: red;
+		color: blue;
 		border-bottom: 3px solid #red;
 	}
 }
 
+/* Showcase */
 .showcase {
 	background: url('/Users/fredointhecut/Code/img/prnd.jpg') no-repeat -10px 0;
-	min-height: 500px;
+	min-height: 420px;
 	color: #white;
 
 
-.showcase-box {
+.showcase-box{
 	padding: 10px 30px;
-	marging-top: 30px;
-	background: red;
+	margin-top: 30px;
+	background: green;
 	color: #ffffff;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
@@ -118,3 +123,88 @@
 		}
 	}
 }
+
+/* Domain Search */
+.domain-search{
+	background: light-gray;
+	padding: 30px 20px 20px 20px;
+	border-bottom: 2px #ccc solid;
+	margin-botton: 30px;
+
+	.domain-form{
+		input, .input-group-label{
+			border-color: dark-gray;
+		}
+	}
+
+}
+
+/* Package Boxes */
+.p-box-1,.p-box-2,.p-box-3{
+  text-align: center;
+
+  .fa{
+    font-size:60px;
+  }
+
+  .features{
+    margin:20px 0 30px 0;
+
+    li{
+      padding:10px 0 10px 0;
+      border-bottom:#ccc solid 1px;
+    }
+  }
+}
+
+.p-box-1{
+	border-radius: 10px;
+	background: orange;
+	.fa{
+		color: blue;
+	}
+	.pricing span{
+		font-size: 35px;
+		font-weight: bold;
+		color: black;
+	}
+}
+
+.p-box-2{
+	border-radius: 10px;
+	background: blue;
+	.fa{
+		color: blue;
+	}
+	.pricing span{
+		font-size: 35px;
+		font-weight: bold;
+		color: black;
+	}
+}
+
+.p-box-3{
+	border-radius: 10px;
+	background: green;
+	.fa{
+		color: blue;
+	}
+	.pricing span{
+		font-size: 35px;
+		font-weight: bold;
+		color: black;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
