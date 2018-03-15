@@ -126,7 +126,7 @@
 
 /* Domain Search */
 .domain-search{
-	background: light-gray;
+	background: dark-gray;
 	padding: 30px 20px 20px 20px;
 	border-bottom: 2px #ccc solid;
 	margin-botton: 30px;
@@ -140,6 +140,9 @@
 }
 
 /* Package Boxes */
+// text PUIT KIVI METALL keskele .tabs-title//
+
+
 .p-box-1,.p-box-2,.p-box-3{
   text-align: center;
 
@@ -159,41 +162,83 @@
 
 .p-box-1{
 	border-radius: 10px;
-	background: orange;
+	background: #00FFFF;
 	.fa{
 		color: blue;
 	}
 	.pricing span{
 		font-size: 35px;
 		font-weight: bold;
-		color: black;
+		color: red;
 	}
 }
 
 .p-box-2{
 	border-radius: 10px;
-	background: blue;
+	background: #00FFFF;
 	.fa{
 		color: blue;
 	}
 	.pricing span{
 		font-size: 35px;
 		font-weight: bold;
-		color: black;
+		color: red;
 	}
 }
 
 .p-box-3{
 	border-radius: 10px;
-	background: green;
+	background: #00FFFF;
 	.fa{
 		color: blue;
 	}
 	.pricing span{
 		font-size: 35px;
 		font-weight: bold;
-		color: black;
+		color: red;
 	}
+}
+
+.section-a{
+	margin-top:10px;
+	padding:170px 0px;
+	background: url('/Users/fredointhecut/Code/img/furniture.png') no-repeat -10px 0;
+
+}
+
+.section-a-text{
+	color: black;
+	padding-left: 230px;
+}
+
+.section-b{
+  background: dark-gray;
+  color: black;
+  padding:50px 0;
+  text-align: center;
+}
+
+.section-c{
+  background: gray;
+  color: white;
+  padding:50px 0;
+  text-align: center;
+
+  .fa{
+    font-size:90px;
+  }
+}
+
+.callout{
+  overflow:auto;
+}
+
+.remember{
+  margin-right:4px;
+}
+
+footer{
+  padding: 10px 0;
 }
 
 
