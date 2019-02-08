@@ -1,14 +1,18 @@
-/* Top Nav */
 .top-nav {
+	top: 0;
+	position: fixed;
+	color: white;
+	font-size: 17px;
+	padding: 0px;
 	width: 100%;
 	background: #696969;
-	padding: 0;
 	margin: 0;
 }
 
 .top-list {
 	padding: 1px;
 	margin: 0;
+  height: 79px;
 	list-style: none;
 	overflow: hidden;
 
@@ -17,10 +21,10 @@
 		float: left;
 		padding: 10px 15px;
 		color: #EEEDEE;
-		font-size: 13px;
+		font-size: 14px;
 	}
 
-	li: first-child{
+	li: {
 		padding-left: 0;
 	}
 
@@ -31,7 +35,7 @@
 
 .top-list-right {
 	padding: 0;
-	margin: 0;
+	margin: 0px;
 	list-style: none;
 	overflow: hidden;
 	float: right;
@@ -46,203 +50,402 @@
 
 	a{
 		color: #ffffff;
+		text-decoration: none;
 	}
 }
 
-/* Top Bar */
-.top-bar {
+#blue {
+	background: red;
 	color: black;
-	padding: 10px;
-	background: gray;
-
-	span{
-		color:lighten(green, 10%);
-		background: none;
-		padding: 5px 9px;
-		margin-right: 4px;
-	}
-
-	li{
-		text-transform: uppercase;
-		background: gray;
-	}
-
-	a{
-		color: black;
-	}
-
-	a:hover {
-		color: green;
-
-	}
-
-	a.current {
-		color: blue;
-		border-bottom: 3px solid #red;
-	}
 }
 
-/* Showcase */
-.showcase {
-	background: url('/Users/fredointhecut/Code/img/prnd.jpg') no-repeat -10px 0;
-	min-height: 420px;
-	color: #white;
+/* SAAB MUUTA VASTAVALT KEELELE, KUIDAS ON SYMBOLID */
+// : lang(en) > q { quotes: ' " ' ' " ' ' ' ' ' ' ' ; }
+// : lang(en-GB) > q { quotes: ' " ' ' " ' ' ' ' ' ' ' ; }
+// : lang(fr) > q { quotes: '<< ' ' >> ' ' " ' ' " ' ; }
+// : lang(de) > q { quotes: ' '' ' ' " ' ' ' ' ' ' ' ; }
 
 
-.showcase-box{
-	padding: 10px 30px;
-	margin-top: 30px;
-	background: green;
-	color: #ffffff;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-
-	p{
-		border-bottom: 1px #ccc solid;
-		padding-bottom: 40px;
-		}
-	}
-
-	.showcase-box-bottom{
-		background: blue;
-		padding: 10px 30px;
-		border-bottom-right-radius: 20px;
-		border-bottom-left-radius: 20px;
-
-	.pricing span{
-		font-size: 35px;
-		font-weight: bold;
-	}
-
-	.start-link{
-		padding-top: 20px;
-
-		a{
-			color: #fff;
-			}
-		}
-	}
+img#firstImage {
+	border: 5px solid blue;
+	margin-right: 15px;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 50%;
+	border-color: black red green blue;
 }
 
-/* Domain Search */
-.domain-search{
-	background: dark-gray;
-	padding: 30px 20px 20px 20px;
-	border-bottom: 2px #ccc solid;
-	margin-botton: 30px;
+img#secondImage {
+	border: 5px solid blue;
+	margin-right: 15px;
+	width: 200px;
+	height: 200px;
+	float: right;
+	border-radius: 50%;
+	border-color: black red green blue;
+}
 
-	.domain-form{
-		input, .input-group-label{
-			border-color: dark-gray;
-		}
-	}
+#countdown {
+	font-size: 60px;
+	color: red;
+}
+
+.table, td, th {
+	height: 50px;
+	width: 150px;
+	border: 1px solid black;
+}
+
+.table {
+	border-collapse: collapse;
+	font-family: tahoma, sans-serif;
+}
+
+th {
+	background-color: blue;
+}
+
+tr.odd {
+	background-color: pink;
+}
+
+tr.even {
+	background-color: green;
+}
+
+caption {
+	caption-side: bottom;
+}
+
+#leftSpace {
+	width: 200px;
+	height: 200px;
+	float: left;
+	background-color: red;
+}
+
+#content {
+	width: 800px;
+	padding: 20px;
 
 }
 
-/* Package Boxes */
-// text PUIT KIVI METALL keskele .tabs-title//
-
-
-.p-box-1,.p-box-2,.p-box-3{
-  text-align: center;
-
-  .fa{
-    font-size:60px;
-  }
-
-  .features{
-    margin:20px 0 30px 0;
-
-    li{
-      padding:10px 0 10px 0;
-      border-bottom:#ccc solid 1px;
-    }
-  }
+#boxImage {
+	height: 200px;
+	width: 200px;
+	float: left;
 }
 
-.p-box-1{
-	border-radius: 10px;
-	background: #00FFFF;
-	.fa{
-		color: blue;
+div#boxText {
+	height: 200px;
+	width: 200px;
+	float: left;
+	background-color: blue;
+}
+
+div#boxText p {
+	font-size: 10px;
+	color: #663;
+ width: 200px;
+ height: 200px;
+}
+
+#rightSpace {
+	width: 200px;
+	height: 200px;
+	float: left;
+	background-color: red;
+}
+
+div#leftSpace p, div#rightSpace p{         // KUI PANNA 4LE BOXILE FLOAT LEFT NTKS, SIIS ON NAD J2RJESTIKKU, kui width klapib.
+	text-align: center;
+	margin-top: 80px;
+	color: #ccf;
+}
+
+div#boxImage {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#rightSpace {
+	text-align: center;
+}
+
+a:hover {
+	color: pink;
+	text-decoration: underline;  // hoverides mingit linki (ankur tag) siis kuvab seda vastavalt stiilile.
+}
+
+a:visited {
+	color: red;  // kui on seal lehel k2idud, muutub see roheliseks
+}
+
+.siderbar {
+	width: 200px;
+	float: right;
+	background-color: #ffc;
+	border: #c99;
+	padding: 5px;
+}
+
+// descendent selector //
+
+.siderbar p {
+	color: #006;
+}
+
+//Attribute selector //
+
+input [type="text"] {
+	width: 45px;
+}
+
+// child selector //
+
+form > input {
+	color: #006;
+}
+
+ #yolo p {
+ height: 300px;
+ width: 300px;
+ color: red;
+ float: left;
+ margin: 15px;
+}
+
+.row {
+	float: left;
+}
+
+#menuVertical {
+	height: 100px;
+	width: 100%;
+	color: blue;
+	margin-bottom: 0px;
+}
+
+/*
+ body {
+	background-image: url(../images/furniture.png);
+}  */
+
+#PERE {
+	width: 750px;
+	height: 200px;
+	margin: 15px auto;
+	background-color: pink;
+	border: solid 1px black;
+}
+
+
+#YKS {
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 220px;
+	padding: 15px;
+	background-color: red;
+}
+
+#KAKS {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	float: left;
+	width: 220px;
+	padding: 15px;
+	background-color: blue;
+}
+
+#KOLM {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	float: left;
+	width: 220px;
+	padding: 15px;
+	background-color: green;
+}
+
+#NELI {
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 220px;
+	padding: 15px;
+	background-color: green;
+}
+
+#VIIS {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	float: left;
+	width: 220px;
+	padding: 15px;
+	background-color: red;
+}
+
+#KUUS {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	float: left;
+	width: 220px;
+	padding: 15px;
+	background-color: blue;
+}
+
+#PERE1 {
+	position: relative;
+	width: 750px;
+	height: 200px;
+	margin: 15px auto;
+	bacground-color: red;
+	border: solid 1px black;
+	background-color: pink;
+
+}
+
+#PERE2 {
+	position: relative;
+	width: 750px;
+	height: 200px;
+	margin: 15px auto;
+	bacground-color: red;
+	border: solid 1px black;
+	background-color: black;
+	color: white;
 	}
-	.pricing span{
-		font-size: 35px;
-		font-weight: bold;
+
+	.bgimage {
+		background-image: url(../images/WAW.jpg);
+		background-position: center center;
+		background-size: cover;
+		height: 200px;
+	}
+
+	.bgimage h1{
+		font-size: 60px;
 		color: red;
+
 	}
-}
 
-.p-box-2{
-	border-radius: 10px;
-	background: #00FFFF;
-	.fa{
-		color: blue;
+	.icon {
+		max-width: 150px;
+		margin: 0;
+		display: block;
 	}
-	.pricing span{
-		font-size: 35px;
-		font-weight: bold;
-		color: red;
+
+	.services section{
+		text-align: center;
 	}
-}
 
-.p-box-3{
-	border-radius: 10px;
-	background: #00FFFF;
-	.fa{
-		color: blue;
+
+				//siit algab dropdown menu stiilid
+
+	* {
+		outline: none;
+		padding: 0;
+		margin: 0;
 	}
-	.pricing span{
-		font-size: 35px;
-		font-weight: bold;
-		color: red;
+	a {
+		outline: none !important;
 	}
-}
+	body {
+		background-color: #F5F5F5;
+		color: #555;
+		font-size: 1.1em;
+		font-family: Arial, Helvetica, sans-serif;
+		outline: none;
+		padding: 0;
+		margin: 0;
+	}
 
-.section-a{
-	margin-top:10px;
-	padding:170px 0px;
-	background: url('/Users/fredointhecut/Code/img/furniture.png') no-repeat -10px 0;
+	.header{
+		background:#FFF;
+	}
 
-}
+	nav ul {
+		-webkit-font-smoothing: antialiased;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	nav li {
+		float: left;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+	nav a {
+		color: #444;
+		display: block;
+		font: normal 13px/50px Arial, Helvetica, sans-serif;
+		padding: 0 25px;
+		text-align: center;
+		text-decoration: none;
+		-webkit-transition: all .25s ease;
+		-moz-transition: all .25s ease;
+		-ms-transition: all .25s ease;
+		-o-transition: all .25s ease;
+		transition: all .25s ease;
+	}
+	nav .dropdown {
+		background:url('../images/arrow.jpg') no-repeat right center;
+	}
+	nav li:hover a {
+		background: #01abf8;
+		color:#FFF;
+	}
+	nav li ul {
+		float: left;
+		left: 0;
+		width:150%;
+		opacity: 0;
+		position: absolute;
+		top: 35px;
+		visibility: hidden;
+		z-index: 1;
+		-webkit-transition: all .25s ease;
+		-moz-transition: all .25s ease;
+		-ms-transition: all .25s ease;
+		-o-transition: all .25s ease;
+		transition: all .25s ease;
+	}
+	nav li:hover ul {
+		opacity: 1;
+		top: 50px;
+		visibility: visible;
+	}
+	nav li ul li {
+		float: none;
+		width: 100%;
+	}
+	nav li ul a:hover {
+		background: #bbb;
+	}
+	/* Clearfix */
+	.cf:after, .cf:before {
+		content: "";
+		display: table;
+	}
+	.cf:after {
+		clear: both;
+	}
 
-.section-a-text{
-	color: black;
-	padding-left: 230px;
-}
-
-.section-b{
-  background: dark-gray;
-  color: black;
-  padding:50px 0;
-  text-align: center;
-}
-
-.section-c{
-  background: gray;
-  color: white;
-  padding:50px 0;
-  text-align: center;
-
-  .fa{
-    font-size:90px;
-  }
-}
-
-.callout{
-  overflow: auto;
-}
-
-.remember{
-  margin-right:4px;
-}
-
-footer{
-  padding: 40px 0;
-}
 
 
 
+
+	//siit over and out dropd
 
 
 
